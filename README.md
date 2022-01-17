@@ -7,3 +7,6 @@ This WPF app allows to find approximate roots values of given non-linear math fu
 * Iterations (fixed-point iteration) method
 ## Screenshot:
 ![screenshot](RootsFinder/screenshot.png)
+## Dependencies:
+* [OxyPlot](https://github.com/oxyplot/oxyplot)
+* [MathParser.org-mXparser](https://github.com/mariuszgromada/MathParser.org-mXparser)
