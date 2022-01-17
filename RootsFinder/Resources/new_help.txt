@@ -1,0 +1,125 @@
+    1. _number_            <number>                regular expression for decimal numbers
+    2. +                   <Operator>              addition
+    3. -                   <Operator>              subtraction
+    4. *                   <Operator>              multiplication
+    5. /                   <Operator>              division
+    6. ^                   <Operator>              exponentiation
+    7. !                   <Operator>              factorial
+    8. #                   <Operator>              modulo function
+   38. sin                 <Unary Function>        trigonometric sine function
+   39. cos                 <Unary Function>        trigonometric cosine function
+   40. tan                 <Unary Function>        trigonometric tangent function
+   41. tg                  <Unary Function>        trigonometric tangent function
+   42. ctan                <Unary Function>        trigonometric cotangent function
+   43. ctg                 <Unary Function>        trigonometric cotangent function
+   44. cot                 <Unary Function>        trigonometric cotangent function
+   45. sec                 <Unary Function>        trigonometric secant function
+   46. cosec               <Unary Function>        trigonometric cosecant function
+   47. csc                 <Unary Function>        trigonometric cosecant function
+   48. asin                <Unary Function>        inverse trigonometric sine function
+   49. arsin               <Unary Function>        inverse trigonometric sine function
+   50. arcsin              <Unary Function>        inverse trigonometric sine function
+   51. acos                <Unary Function>        inverse trigonometric cosine function
+   52. arcos               <Unary Function>        inverse trigonometric cosine function
+   53. arccos              <Unary Function>        inverse trigonometric cosine function
+   54. atan                <Unary Function>        inverse trigonometric tangent function
+   55. arctan              <Unary Function>        inverse trigonometric tangent function
+   56. atg                 <Unary Function>        inverse trigonometric tangent function
+   57. arctg               <Unary Function>        inverse trigonometric tangent function
+   58. actan               <Unary Function>        inverse trigonometric cotangent function
+   59. arcctan             <Unary Function>        inverse trigonometric cotangent function
+   60. actg                <Unary Function>        inverse trigonometric cotangent function
+   61. arcctg              <Unary Function>        inverse trigonometric cotangent function
+   62. acot                <Unary Function>        inverse trigonometric cotangent function
+   63. arccot              <Unary Function>        inverse trigonometric cotangent function
+   64. ln                  <Unary Function>        natural logarithm function (base e)
+   65. log2                <Unary Function>        binary logarithm function (base 2)
+   66. log10               <Unary Function>        common logarithm function (base 10)
+   67. rad                 <Unary Function>        degrees to radians function
+   68. exp                 <Unary Function>        exponential function
+   69. sqrt                <Unary Function>        squre root function
+   70. sinh                <Unary Function>        hyperbolic sine function
+   71. cosh                <Unary Function>        hyperbolic cosine function
+   72. tanh                <Unary Function>        hyperbolic tangent function
+   73. tgh                 <Unary Function>        hyperbolic tangent function
+   74. ctanh               <Unary Function>        hyperbolic cotangent function
+   75. coth                <Unary Function>        hyperbolic cotangent function
+   76. ctgh                <Unary Function>        hyperbolic cotangent function
+   77. sech                <Unary Function>        hyperbolic secant function
+   78. csch                <Unary Function>        hyperbolic cosecant function
+   79. cosech              <Unary Function>        hyperbolic cosecant function
+   81. abs                 <Unary Function>        absolut value function
+   82. sgn                 <Unary Function>        signum function
+   83. floor               <Unary Function>        floor function
+   84. ceil                <Unary Function>        ceiling function
+   86. asinh               <Unary Function>        inverse hyperbolic sine function
+   87. arsinh              <Unary Function>        inverse hyperbolic sine function
+   88. arcsinh             <Unary Function>        inverse hyperbolic sine function
+   89. acosh               <Unary Function>        inverse hyperbolic cosine function
+   90. arcosh              <Unary Function>        inverse hyperbolic cosine function
+   91. arccosh             <Unary Function>        inverse hyperbolic cosine function
+   92. atanh               <Unary Function>        inverse hyperbolic tangent function
+   93. arctanh             <Unary Function>        inverse hyperbolic tangent function
+   94. atgh                <Unary Function>        inverse hyperbolic tangent function
+   95. arctgh              <Unary Function>        inverse hyperbolic tangent function
+   96. actanh              <Unary Function>        inverse hyperbolic cotangent function
+   97. arcctanh            <Unary Function>        inverse hyperbolic cotangent function
+   98. acoth               <Unary Function>        inverse hyperbolic cotangent function
+   99. arcoth              <Unary Function>        inverse hyperbolic cotangent function
+  100. arccoth             <Unary Function>        inverse hyperbolic cotangent function
+  101. actgh               <Unary Function>        inverse hyperbolic cotangent function
+  102. arcctgh             <Unary Function>        inverse hyperbolic cotangent function
+  103. asech               <Unary Function>        inverse hyperbolic secant function
+  104. arsech              <Unary Function>        inverse hyperbolic secant function
+  105. arcsech             <Unary Function>        inverse hyperbolic secant function
+  106. acsch               <Unary Function>        inverse hyperbolic cosecant function
+  107. arcsch              <Unary Function>        inverse hyperbolic cosecant function
+  108. arccsch             <Unary Function>        inverse hyperbolic cosecant function
+  109. acosech             <Unary Function>        inverse hyperbolic cosecant function
+  110. arcosech            <Unary Function>        inverse hyperbolic cosecant function
+  111. arccosech           <Unary Function>        inverse hyperbolic cosecant function
+  112. sinc                <Unary Function>        sinc function (normalized)
+  113. Sa                  <Unary Function>        sinc function (normalized)
+  114. Sinc                <Unary Function>        sinc function (unnormalized)
+  129. log                 <Binary Function>       logarithm function
+  130. mod                 <Binary Function>       modulo function
+  156. min                 <Variadic Function>     Minimum function: min(a,b,c,...)
+  157. max                 <Variadic Function>     Maximum function: max(a,b,c,...)
+  171. der                 <Calculus Operator>     derivative operator ( der(f(x,...), x) ) 
+  183. pi                  <Constant Value>        Pi, Archimedes' constant or Ludolph's number
+  184. e                   <Constant Value>        Napier's constant, or Euler's number, base of Natural logarithm
+  269. [Uni]               <Random Variable>       (3.0) Random variable - Uniform continuous distribution U(0,1), usage example: 2*[Uni]
+  270. [Int]               <Random Variable>       (3.0) Random variable - random integer - usage example sin( 3*[Int] )
+  271. [Int1]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^1, 10^1} - usage example sin( 3*[Int1] )
+  272. [Int2]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^2, 10^2} - usage example sin( 3*[Int2] )
+  273. [Int3]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^3, 10^3} - usage example sin( 3*[Int3] )
+  274. [Int4]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^4, 10^4} - usage example sin( 3*[Int4] )
+  275. [Int5]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^5, 10^5} - usage example sin( 3*[Int5] )
+  276. [Int6]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^6, 10^6} - usage example sin( 3*[Int6] )
+  277. [Int7]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^7, 10^7} - usage example sin( 3*[Int7] )
+  278. [Int8]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^8, 10^8} - usage example sin( 3*[Int8] )
+  279. [Int9]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^9, 10^9} - usage example sin( 3*[Int9] )
+  280. [nat]               <Random Variable>       (3.0) Random variable - random natural number including 0 - usage example sin( 3*[nat] )
+  281. [nat1]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^1} - usage example sin( 3*[nat1] )
+  282. [nat2]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^2} - usage example sin( 3*[nat2] )
+  283. [nat3]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^3} - usage example sin( 3*[nat3] )
+  284. [nat4]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^4} - usage example sin( 3*[nat4] )
+  285. [nat5]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^5} - usage example sin( 3*[nat5] )
+  286. [nat6]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^6} - usage example sin( 3*[nat6] )
+  287. [nat7]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^7} - usage example sin( 3*[nat7] )
+  288. [nat8]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^8} - usage example sin( 3*[nat8] )
+  289. [nat9]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^9} - usage example sin( 3*[nat9] )
+  290. [Nat]               <Random Variable>       (3.0) Random variable - random natural number - usage example sin( 3*[Nat] )
+  291. [Nat1]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^1} - usage example sin( 3*[Nat1] )
+  292. [Nat2]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^2} - usage example sin( 3*[Nat2] )
+  293. [Nat3]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^3} - usage example sin( 3*[Nat3] )
+  294. [Nat4]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^4} - usage example sin( 3*[Nat4] )
+  295. [Nat5]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^5} - usage example sin( 3*[Nat5] )
+  296. [Nat6]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^6} - usage example sin( 3*[Nat6] )
+  297. [Nat7]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^7} - usage example sin( 3*[Nat7] )
+  298. [Nat8]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^8} - usage example sin( 3*[Nat8] )
+  299. [Nat9]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^9} - usage example sin( 3*[Nat9] )
+  300. [Nor]               <Random Variable>       (3.0) Random variable - Normal distribution N(0,1) - usage example cos( 3*[Nor]+1 )
+  412. (                   <Parser Symbol>         left parentheses
+  413. )                   <Parser Symbol>         right parentheses
+  414. ,                   <Parser Symbol>         comma (function parameters)

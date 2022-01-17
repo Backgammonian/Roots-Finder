@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RootsFinder", "RootsFinder\RootsFinder.csproj", "{74E707E9-F1F4-4633-A35D-322E0BA9F780}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74E707E9-F1F4-4633-A35D-322E0BA9F780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74E707E9-F1F4-4633-A35D-322E0BA9F780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74E707E9-F1F4-4633-A35D-322E0BA9F780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74E707E9-F1F4-4633-A35D-322E0BA9F780}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D4E1806-E81F-4461-B3F4-872FCB5A2D70}
+	EndGlobalSection
+EndGlobal

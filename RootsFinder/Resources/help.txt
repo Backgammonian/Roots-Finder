@@ -1,0 +1,414 @@
+    1. _number_            <number>                regullar expression for decimal numbers
+    2. +                   <Operator>              addition
+    3. -                   <Operator>              subtraction
+    4. *                   <Operator>              multiplication
+    5. /                   <Operator>              division
+    6. ^                   <Operator>              exponentiation
+    7. !                   <Operator>              factorial
+    8. #                   <Operator>              modulo function
+    9. &                   <Boolean Operator>      logical conjunction (AND)
+   10. &&                  <Boolean Operator>      logical conjunction (AND)
+   11. /\                  <Boolean Operator>      logical conjunction (AND)
+   12. ~&                  <Boolean Operator>      NAND - Sheffer stroke
+   13. ~&&                 <Boolean Operator>      NAND - Sheffer stroke
+   14. ~/\                 <Boolean Operator>      NAND - Sheffer stroke
+   15. |                   <Boolean Operator>      logical disjunction (OR)
+   16. ||                  <Boolean Operator>      logical disjunction (OR)
+   17. \/                  <Boolean Operator>      logical disjunction (OR)
+   18. ~|                  <Boolean Operator>      logical NOR
+   19. ~||                 <Boolean Operator>      logical NOR
+   20. ~\/                 <Boolean Operator>      logical NOR
+   21. (+)                 <Boolean Operator>      exclusive or (XOR)
+   22. -->                 <Boolean Operator>      implication (IMP)
+   23. <--                 <Boolean Operator>      converse implication (CIMP)
+   24. -/>                 <Boolean Operator>      material nonimplication (NIMP)
+   25. </-                 <Boolean Operator>      converse nonimplication (CNIMP)
+   26. <->                 <Boolean Operator>      logical biconditional (EQV)
+   27. ~                   <Boolean Operator>      negation
+   28. ¬                   <Boolean Operator>      negation
+   29. =                   <Binary Relation>       equality
+   30. ==                  <Binary Relation>       equality
+   31. <>                  <Binary Relation>       inequation
+   32. ~=                  <Binary Relation>       inequation
+   33. !=                  <Binary Relation>       inequation
+   34. <                   <Binary Relation>       lower than
+   35. >                   <Binary Relation>       greater than
+   36. <=                  <Binary Relation>       lower or equal
+   37. >=                  <Binary Relation>       greater or equal
+   38. sin                 <Unary Function>        trigonometric sine function
+   39. cos                 <Unary Function>        trigonometric cosine function
+   40. tan                 <Unary Function>        trigonometric tangent function
+   41. tg                  <Unary Function>        trigonometric tangent function
+   42. ctan                <Unary Function>        trigonometric cotangent function
+   43. ctg                 <Unary Function>        trigonometric cotangent function
+   44. cot                 <Unary Function>        trigonometric cotangent function
+   45. sec                 <Unary Function>        trigonometric secant function
+   46. cosec               <Unary Function>        trigonometric cosecant function
+   47. csc                 <Unary Function>        trigonometric cosecant function
+   48. asin                <Unary Function>        inverse trigonometric sine function
+   49. arsin               <Unary Function>        inverse trigonometric sine function
+   50. arcsin              <Unary Function>        inverse trigonometric sine function
+   51. acos                <Unary Function>        inverse trigonometric cosine function
+   52. arcos               <Unary Function>        inverse trigonometric cosine function
+   53. arccos              <Unary Function>        inverse trigonometric cosine function
+   54. atan                <Unary Function>        inverse trigonometric tangent function
+   55. arctan              <Unary Function>        inverse trigonometric tangent function
+   56. atg                 <Unary Function>        inverse trigonometric tangent function
+   57. arctg               <Unary Function>        inverse trigonometric tangent function
+   58. actan               <Unary Function>        inverse trigonometric cotangent function
+   59. arcctan             <Unary Function>        inverse trigonometric cotangent function
+   60. actg                <Unary Function>        inverse trigonometric cotangent function
+   61. arcctg              <Unary Function>        inverse trigonometric cotangent function
+   62. acot                <Unary Function>        inverse trigonometric cotangent function
+   63. arccot              <Unary Function>        inverse trigonometric cotangent function
+   64. ln                  <Unary Function>        natural logarithm function (base e)
+   65. log2                <Unary Function>        binary logarithm function (base 2)
+   66. log10               <Unary Function>        common logarithm function (base 10)
+   67. rad                 <Unary Function>        degrees to radians function
+   68. exp                 <Unary Function>        exponential function
+   69. sqrt                <Unary Function>        squre root function
+   70. sinh                <Unary Function>        hyperbolic sine function
+   71. cosh                <Unary Function>        hyperbolic cosine function
+   72. tanh                <Unary Function>        hyperbolic tangent function
+   73. tgh                 <Unary Function>        hyperbolic tangent function
+   74. ctanh               <Unary Function>        hyperbolic cotangent function
+   75. coth                <Unary Function>        hyperbolic cotangent function
+   76. ctgh                <Unary Function>        hyperbolic cotangent function
+   77. sech                <Unary Function>        hyperbolic secant function
+   78. csch                <Unary Function>        hyperbolic cosecant function
+   79. cosech              <Unary Function>        hyperbolic cosecant function
+   80. deg                 <Unary Function>        radians to degrees function
+   81. abs                 <Unary Function>        absolut value function
+   82. sgn                 <Unary Function>        signum function
+   83. floor               <Unary Function>        floor function
+   84. ceil                <Unary Function>        ceiling function
+   85. not                 <Unary Function>        negation function
+   86. asinh               <Unary Function>        inverse hyperbolic sine function
+   87. arsinh              <Unary Function>        inverse hyperbolic sine function
+   88. arcsinh             <Unary Function>        inverse hyperbolic sine function
+   89. acosh               <Unary Function>        inverse hyperbolic cosine function
+   90. arcosh              <Unary Function>        inverse hyperbolic cosine function
+   91. arccosh             <Unary Function>        inverse hyperbolic cosine function
+   92. atanh               <Unary Function>        inverse hyperbolic tangent function
+   93. arctanh             <Unary Function>        inverse hyperbolic tangent function
+   94. atgh                <Unary Function>        inverse hyperbolic tangent function
+   95. arctgh              <Unary Function>        inverse hyperbolic tangent function
+   96. actanh              <Unary Function>        inverse hyperbolic cotangent function
+   97. arcctanh            <Unary Function>        inverse hyperbolic cotangent function
+   98. acoth               <Unary Function>        inverse hyperbolic cotangent function
+   99. arcoth              <Unary Function>        inverse hyperbolic cotangent function
+  100. arccoth             <Unary Function>        inverse hyperbolic cotangent function
+  101. actgh               <Unary Function>        inverse hyperbolic cotangent function
+  102. arcctgh             <Unary Function>        inverse hyperbolic cotangent function
+  103. asech               <Unary Function>        inverse hyperbolic secant function
+  104. arsech              <Unary Function>        inverse hyperbolic secant function
+  105. arcsech             <Unary Function>        inverse hyperbolic secant function
+  106. acsch               <Unary Function>        inverse hyperbolic cosecant function
+  107. arcsch              <Unary Function>        inverse hyperbolic cosecant function
+  108. arccsch             <Unary Function>        inverse hyperbolic cosecant function
+  109. acosech             <Unary Function>        inverse hyperbolic cosecant function
+  110. arcosech            <Unary Function>        inverse hyperbolic cosecant function
+  111. arccosech           <Unary Function>        inverse hyperbolic cosecant function
+  112. sinc                <Unary Function>        sinc function (normalized)
+  113. Sa                  <Unary Function>        sinc function (normalized)
+  114. Sinc                <Unary Function>        sinc function (unnormalized)
+  115. Bell                <Unary Function>        Bell number
+  116. Luc                 <Unary Function>        Lucas number
+  117. Fib                 <Unary Function>        Fionacci number
+  118. harm                <Unary Function>        Harmonic number
+  119. ispr                <Unary Function>        (2.3) Prime number test (is number a prime?)
+  120. Pi                  <Unary Function>        (2.3) Prime-counting function - Pi(x)
+  121. Ei                  <Unary Function>        (2.3) Exponential integral function (non-elementary special function) - usage example: Ei(x)
+  122. li                  <Unary Function>        (2.3) Logarithmic integral function (non-elementary special function) - usage example: li(x)
+  123. Li                  <Unary Function>        (2.3) Offset logarithmic integral function (non-elementary special function) - usage example: Li(x)
+  124. erf                 <Unary Function>        (3.0) Gauss error function (non-elementary special function) - usage example: 2 + erf(x)
+  125. erfc                <Unary Function>        (3.0) Gauss complementary error function (non-elementary special function) - usage example: 1 - erfc(x)
+  126. erfInv              <Unary Function>        (3.0) Inverse Gauss error function (non-elementary special function) - usage example: erfInv(x)
+  127. erfcInv             <Unary Function>        (3.0) Inverse Gauss complementary error function (non-elementary special function) - usage example: erfcInv(x)
+  128. ulp                 <Unary Function>        (3.0) Unit in The Last Place - ulp(0.1)
+  129. log                 <Binary Function>       logarithm function
+  130. mod                 <Binary Function>       modulo function
+  131. C                   <Binary Function>       binomial coefficient function
+  132. Bern                <Binary Function>       Bernoulli numbers
+  133. Stirl1              <Binary Function>       Stirling numbers of the first kind
+  134. Stirl2              <Binary Function>       Stirling numbers of the second kind
+  135. Worp                <Binary Function>       Worpitzky number
+  136. Euler               <Binary Function>       Euler number
+  137. KDelta              <Binary Function>       Kronecker delta
+  138. EulerPol            <Binary Function>       EulerPol
+  139. Harm                <Binary Function>       Harmonic number
+  140. rUni                <Binary Function>       (3.0) Random variable - Uniform continuous distribution U(a,b), usage example: 2*rUni(2,10)
+  141. rUnid               <Binary Function>       (3.0) Random variable - Uniform discrete distribution U{a,b}, usage example: 2*rUnid(2,100)
+  142. round               <Binary Function>       (3.0) Half-up rounding, usage examples: round(2.2, 0) = 2, round(2.6, 0) = 3, round(2.66,1) = 2.7
+  143. rNor                <Binary Function>       (3.0) Random variable - Normal distribution N(m,s) m - mean, s - stddev, usage example: 3*rNor(0,1)
+  144. if                  <3-args Function>       if function ( if(con, if_true, if_false) )
+  145. chi                 <3-args Function>       Characteristic function for x in (a,b) - chi(x, a, b)
+  146. CHi                 <3-args Function>       Characteristic function for x in [a,b] - CHi(x, a, b)
+  147. Chi                 <3-args Function>       Characteristic function for x in [a,b) - Chi(x, a, b)
+  148. cHi                 <3-args Function>       Characteristic function for x in (a,b] - cHi(x, a, b)
+  149. pUni                <3-args Function>       (3.0) Probability distribution function - Uniform continuous distribution U(a,b), usage example: 2 * pUni(x, 2, 10)
+  150. cUni                <3-args Function>       (3.0) Cumulative distribution function - Uniform continuous distribution U(a,b), usage example: 2 * cUni(x, 2, 10)
+  151. qUni                <3-args Function>       (3.0) Quantile function (inverse cumulative distribution function) - Uniform continuous distribution U(a,b), usage example: 2 * qUni(q, 2, 10)
+  152. pNor                <3-args Function>       (3.0) Probability distribution function - Normal distribution N(m,s) m - mean, s - stddev, usage example: 2 * pNor(x, 1, 2)
+  153. cNor                <3-args Function>       (3.0) Cumulative distribution function - Normal distribution N(m,s) m - mean, s - stddev, usage example: 2 * cNor(x, 1, 2)
+  154. qNor                <3-args Function>       (3.0) Quantile function (inverse cumulative distribution function) - Normal distribution N(m,s) m - mean, s - stddev, usage example: 2 * qNor(q, 1, 2)
+  155. iff                 <Variadic Function>     if function ( iff(con_1, if_true_1_exp, ..., con_n, if_true_n_exp) )
+  156. min                 <Variadic Function>     Minimum function: min(a,b,c,...)
+  157. max                 <Variadic Function>     Maximum function: max(a,b,c,...)
+  158. ConFrac             <Variadic Function>     Continued fraction: ConFrac(a,b,c,...)
+  159. ConPol              <Variadic Function>     Continued polynomial: ConPol(a,b,c,...)
+  160. gcd                 <Variadic Function>     Greatest common divisor: gcd(a,b,c,...)
+  161. lcm                 <Variadic Function>     Least common multiple: lcm(a,b,c,...)
+  162. add                 <Variadic Function>     (2.4) Summation operator add(a1,a2,a3,...,an)
+  163. multi               <Variadic Function>     (2.4) Multiplication multi(a1,a2,a3,...,an)
+  164. mean                <Variadic Function>     (2.4) Mean / average value mean(a1,a2,a3,...,an)
+  165. var                 <Variadic Function>     (2.4) Bias-corrected sample variance var(a1,a2,a3,...,an)
+  166. std                 <Variadic Function>     (2.4) Bias-corrected sample standard deviation std(a1,a2,a3,...,an)
+  167. rList               <Variadic Function>     (3.0) Random number from given list of numbers rList(a1,a2,a3,...,an)
+  168. sum                 <Calculus Operator>     summation operator (SIGMA) sum(i, from, to, f(i,...))
+  169. prod                <Calculus Operator>     product operator (PI) prod(i, from, to, f(i,...))
+  170. int                 <Calculus Operator>     definite integral operator ( int(f(x,...), x, a, b) )
+  171. der                 <Calculus Operator>     derivative operator ( der(f(x,...), x) ) 
+  172. der-                <Calculus Operator>     left derivative operator ( der-(f(x,...), x) ) 
+  173. der+                <Calculus Operator>     right derivative operator ( der+(f(x,...), x) ) 
+  174. dern                <Calculus Operator>     n-th derivative operator ( dern(f(x,...), x) ) 
+  175. diff                <Calculus Operator>     forward difference operator
+  176. difb                <Calculus Operator>     backward difference operator
+  177. avg                 <Calculus Operator>     (2.4) Average operator avg(i, from, to, f(i,...))
+  178. vari                <Calculus Operator>     (2.4) Bias-corrected sample variance operator vari(i, from, to, f(i,...))
+  179. stdi                <Calculus Operator>     (2.4) Bias-corrected sample standard deviation operator stdi(i, from, to, f(i,...))
+  180. mini                <Calculus Operator>     (2.4) Minimum value mini(i, from, to, f(i,...))
+  181. maxi                <Calculus Operator>     (2.4) Maximum valu maxi(i, from, to, f(i,...))
+  182. solve               <Calculus Operator>     (4.0) f(x) = 0 equation solving, function root finding: solve( f(x,...), x, a, b )
+  183. pi                  <Constant Value>        Pi, Archimedes' constant or Ludolph's number
+  184. e                   <Constant Value>        Napier's constant, or Euler's number, base of Natural logarithm
+  185. [gam]               <Constant Value>        Euler-Mascheroni constant
+  186. [phi]               <Constant Value>        Golden ratio
+  187. [PN]                <Constant Value>        Plastic constant
+  188. [B*]                <Constant Value>        Embree-Trefethen constant
+  189. [F'd]               <Constant Value>        Feigenbaum constant alfa
+  190. [F'a]               <Constant Value>        Feigenbaum constant delta
+  191. [C2]                <Constant Value>        Twin prime constant
+  192. [M1]                <Constant Value>        Meissel-Mertens constant
+  193. [B2]                <Constant Value>        Brun's constant for twin primes
+  194. [B4]                <Constant Value>        Brun's constant for prime quadruplets
+  195. [BN'L]              <Constant Value>        de Bruijn-Newman constant
+  196. [Kat]               <Constant Value>        Catalan's constant
+  197. [K*]                <Constant Value>        Landau-Ramanujan constant
+  198. [K.]                <Constant Value>        Viswanath's constant
+  199. [B'L]               <Constant Value>        Legendre's constant
+  200. [RS'm]              <Constant Value>        Ramanujan-Soldner constant
+  201. [EB'e]              <Constant Value>        Erdos-Borwein constant
+  202. [Bern]              <Constant Value>        Bernstein's constant
+  203. [GKW'l]             <Constant Value>        Gauss-Kuzmin-Wirsing constant
+  204. [HSM's]             <Constant Value>        Hafner-Sarnak-McCurley constant
+  205. [lm]                <Constant Value>        Golomb-Dickman constant
+  206. [Cah]               <Constant Value>        Cahen's constant
+  207. [Ll]                <Constant Value>        Laplace limit
+  208. [AG]                <Constant Value>        Alladi-Grinstead constant
+  209. [L*]                <Constant Value>        Lengyel's constant
+  210. [L.]                <Constant Value>        Levy's constant
+  211. [Dz3]               <Constant Value>        Apery's constant
+  212. [A3n]               <Constant Value>        Mills' constant
+  213. [Bh]                <Constant Value>        Backhouse's constant
+  214. [Pt]                <Constant Value>        Porter's constant
+  215. [L2]                <Constant Value>        Lieb's square ice constant
+  216. [Nv]                <Constant Value>        Niven's constant
+  217. [Ks]                <Constant Value>        Sierpinski's constant
+  218. [Kh]                <Constant Value>        Khinchin's constant
+  219. [FR]                <Constant Value>        Fransen-Robinson constant
+  220. [La]                <Constant Value>        Landau's constant
+  221. [P2]                <Constant Value>        Parabolic constant
+  222. [Om]                <Constant Value>        Omega constant
+  223. [MRB]               <Constant Value>        MRB constant
+  224. [li2]               <Constant Value>        (2.3) li(2) - logarithmic integral function at x=2
+  225. [EG]                <Constant Value>        (2.3) Gompertz constant
+  226. [ c]                <Constant Value>        (4.0) <Physical Constant> Light speed in vacuum [m/s] (m=1, s=1)
+  227. [G.]                <Constant Value>        (4.0) <Physical Constant> Gravitational constant (m=1, kg=1, s=1)]
+  228. [g]                 <Constant Value>        (4.0) <Physical Constant> Gravitational acceleration on Earth [m/s^2] (m=1, s=1)
+  229. [hP]                <Constant Value>        (4.0) <Physical Constant> Planck constant (m=1, kg=1, s=1)
+  230. [h-]                <Constant Value>        (4.0) <Physical Constant> Reduced Planck constant / Dirac constant (m=1, kg=1, s=1)]
+  231. [lP]                <Constant Value>        (4.0) <Physical Constant> Planck length [m] (m=1)
+  232. [mP]                <Constant Value>        (4.0) <Physical Constant> Planck mass [kg] (kg=1)
+  233. [tP]                <Constant Value>        (4.0) <Physical Constant> Planck time [s] (s=1)
+  234. [ly]                <Constant Value>        (4.0) <Astronomical Constant> Light year [m] (m=1)
+  235. [au]                <Constant Value>        (4.0) <Astronomical Constant> Astronomical unit [m] (m=1)
+  236. [pc]                <Constant Value>        (4.0) <Astronomical Constant> Parsec [m] (m=1)
+  237. [kpc]               <Constant Value>        (4.0) <Astronomical Constant> Kiloparsec [m] (m=1)
+  238. [Earth-R-eq]        <Constant Value>        (4.0) <Astronomical Constant> Earth equatorial radius [m] (m=1)
+  239. [Earth-R-po]        <Constant Value>        (4.0) <Astronomical Constant> Earth polar radius [m] (m=1)
+  240. [Earth-R]           <Constant Value>        (4.0) <Astronomical Constant> Earth mean radius (m=1)
+  241. [Earth-M]           <Constant Value>        (4.0) <Astronomical Constant> Earth mass [kg] (kg=1)
+  242. [Earth-D]           <Constant Value>        (4.0) <Astronomical Constant> Earth-Sun distance - semi major axis [m] (m=1)
+  243. [Moon-R]            <Constant Value>        (4.0) <Astronomical Constant> Moon mean radius [m] (m=1)
+  244. [Moon-M]            <Constant Value>        (4.0) <Astronomical Constant> Moon mass [kg] (kg=1)
+  245. [Moon-D]            <Constant Value>        (4.0) <Astronomical Constant> Moon-Earth distance - semi major axis [m] (m=1)
+  246. [Solar-R]           <Constant Value>        (4.0) <Astronomical Constant> Solar mean radius [m] (m=1)
+  247. [Solar-M]           <Constant Value>        (4.0) <Astronomical Constant> Solar mass [kg] (kg=1)
+  248. [Mercury-R]         <Constant Value>        (4.0) <Astronomical Constant> Mercury mean radius [m] (m=1)
+  249. [Mercury-M]         <Constant Value>        (4.0) <Astronomical Constant> Mercury mass [kg] (kg=1)
+  250. [Mercury-D]         <Constant Value>        (4.0) <Astronomical Constant> Mercury-Sun distance - semi major axis [m] (m=1)
+  251. [Venus-R]           <Constant Value>        (4.0) <Astronomical Constant> Venus mean radius [m] (m=1)
+  252. [Venus-M]           <Constant Value>        (4.0) <Astronomical Constant> Venus mass [kg] (kg=1)
+  253. [Venus-D]           <Constant Value>        (4.0) <Astronomical Constant> Venus-Sun distance - semi major axis [m] (m=1)
+  254. [Mars-R]            <Constant Value>        (4.0) <Astronomical Constant> Mars mean radius [m] (m=1)
+  255. [Mars-M]            <Constant Value>        (4.0) <Astronomical Constant> Mars mass [kg] (kg=1)
+  256. [Mars-D]            <Constant Value>        (4.0) <Astronomical Constant> Mars-Sun distance - semi major axis [m] (m=1)
+  257. [Jupiter-R]         <Constant Value>        (4.0) <Astronomical Constant> Jupiter mean radius [m] (m=1)
+  258. [Jupiter-M]         <Constant Value>        (4.0) <Astronomical Constant> Jupiter mass [kg] (kg=1)
+  259. [Jupiter-D]         <Constant Value>        (4.0) <Astronomical Constant> Jupiter-Sun distance - semi major axis [m] (m=1)
+  260. [Saturn-R]          <Constant Value>        (4.0) <Astronomical Constant> Saturn mean radius [m] (m=1)
+  261. [Saturn-M]          <Constant Value>        (4.0) <Astronomical Constant> Saturn mass [kg] (kg=1)
+  262. [Saturn-D]          <Constant Value>        (4.0) <Astronomical Constant> Saturn-Sun distance - semi major axis [m] (m=1)
+  263. [Uranus-R]          <Constant Value>        (4.0) <Astronomical Constant> Uranus mean radius [m] (m=1)
+  264. [Uranus-M]          <Constant Value>        (4.0) <Astronomical Constant> Uranus mass [kg] (kg=1)
+  265. [Uranus-D]          <Constant Value>        (4.0) <Astronomical Constant> Uranus-Sun distance - semi major axis [m] (m=1)
+  266. [Neptune-R]         <Constant Value>        (4.0) <Astronomical Constant> Neptune mean radius [m] (m=1)
+  267. [Neptune-M]         <Constant Value>        (4.0) <Astronomical Constant> Neptune mass [kg] (kg=1)
+  268. [Neptune-D]         <Constant Value>        (4.0) <Astronomical Constant> Neptune-Sun distance - semi major axis [m] (m=1)
+  269. [Uni]               <Random Variable>       (3.0) Random variable - Uniform continuous distribution U(0,1), usage example: 2*[Uni]
+  270. [Int]               <Random Variable>       (3.0) Random variable - random integer - usage example sin( 3*[Int] )
+  271. [Int1]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^1, 10^1} - usage example sin( 3*[Int1] )
+  272. [Int2]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^2, 10^2} - usage example sin( 3*[Int2] )
+  273. [Int3]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^3, 10^3} - usage example sin( 3*[Int3] )
+  274. [Int4]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^4, 10^4} - usage example sin( 3*[Int4] )
+  275. [Int5]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^5, 10^5} - usage example sin( 3*[Int5] )
+  276. [Int6]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^6, 10^6} - usage example sin( 3*[Int6] )
+  277. [Int7]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^7, 10^7} - usage example sin( 3*[Int7] )
+  278. [Int8]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^8, 10^8} - usage example sin( 3*[Int8] )
+  279. [Int9]              <Random Variable>       (3.0) Random variable - random integer - Uniform discrete distribution U{-10^9, 10^9} - usage example sin( 3*[Int9] )
+  280. [nat]               <Random Variable>       (3.0) Random variable - random natural number including 0 - usage example sin( 3*[nat] )
+  281. [nat1]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^1} - usage example sin( 3*[nat1] )
+  282. [nat2]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^2} - usage example sin( 3*[nat2] )
+  283. [nat3]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^3} - usage example sin( 3*[nat3] )
+  284. [nat4]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^4} - usage example sin( 3*[nat4] )
+  285. [nat5]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^5} - usage example sin( 3*[nat5] )
+  286. [nat6]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^6} - usage example sin( 3*[nat6] )
+  287. [nat7]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^7} - usage example sin( 3*[nat7] )
+  288. [nat8]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^8} - usage example sin( 3*[nat8] )
+  289. [nat9]              <Random Variable>       (3.0) Random variable - random natural number including 0 - Uniform discrete distribution U{0, 10^9} - usage example sin( 3*[nat9] )
+  290. [Nat]               <Random Variable>       (3.0) Random variable - random natural number - usage example sin( 3*[Nat] )
+  291. [Nat1]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^1} - usage example sin( 3*[Nat1] )
+  292. [Nat2]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^2} - usage example sin( 3*[Nat2] )
+  293. [Nat3]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^3} - usage example sin( 3*[Nat3] )
+  294. [Nat4]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^4} - usage example sin( 3*[Nat4] )
+  295. [Nat5]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^5} - usage example sin( 3*[Nat5] )
+  296. [Nat6]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^6} - usage example sin( 3*[Nat6] )
+  297. [Nat7]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^7} - usage example sin( 3*[Nat7] )
+  298. [Nat8]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^8} - usage example sin( 3*[Nat8] )
+  299. [Nat9]              <Random Variable>       (3.0) Random variable - random natural number - Uniform discrete distribution U{1, 10^9} - usage example sin( 3*[Nat9] )
+  300. [Nor]               <Random Variable>       (3.0) Random variable - Normal distribution N(0,1) - usage example cos( 3*[Nor]+1 )
+  301. @~                  <Bitwise Operator>      (4.0) Bitwise unary complement
+  302. @&                  <Bitwise Operator>      (4.0) Bitwise AND
+  303. @^                  <Bitwise Operator>      (4.0) Bitwise exclusive OR
+  304. @|                  <Bitwise Operator>      (4.0) Bitwise inclusive OR
+  305. @<<                 <Bitwise Operator>      (4.0) Signed left shift
+  306. @>>                 <Bitwise Operator>      (4.0) Signed right shift
+  307. [%]                 <Unit>                  (4.0) <Ratio, Fraction> Percentage = 0.01
+  308. [%%]                <Unit>                  (4.0) <Ratio, Fraction> Promil, Per mille = 0.001
+  309. [Y]                 <Unit>                  (4.0) <Metric prefix> Septillion / Yotta = 10^24
+  310. [sept]              <Unit>                  (4.0) <Metric prefix> Septillion / Yotta = 10^24
+  311. [Z]                 <Unit>                  (4.0) <Metric prefix> Sextillion / Zetta = 10^21
+  312. [sext]              <Unit>                  (4.0) <Metric prefix> Sextillion / Zetta = 10^21
+  313. [E]                 <Unit>                  (4.0) <Metric prefix> Quintillion / Exa = 10^18
+  314. [quint]             <Unit>                  (4.0) <Metric prefix> Quintillion / Exa = 10^18
+  315. [P]                 <Unit>                  (4.0) <Metric prefix> Quadrillion / Peta = 10^15
+  316. [quad]              <Unit>                  (4.0) <Metric prefix> Quadrillion / Peta = 10^15
+  317. [T]                 <Unit>                  (4.0) <Metric prefix> Trillion / Tera = 10^12
+  318. [tril]              <Unit>                  (4.0) <Metric prefix> Trillion / Tera = 10^12
+  319. [G]                 <Unit>                  (4.0) <Metric prefix> Billion / Giga = 10^9
+  320. [bil]               <Unit>                  (4.0) <Metric prefix> Billion / Giga = 10^9
+  321. [M]                 <Unit>                  (4.0) <Metric prefix> Million / Mega = 10^6
+  322. [mil]               <Unit>                  (4.0) <Metric prefix> Million / Mega = 10^6
+  323. [k]                 <Unit>                  (4.0) <Metric prefix> Thousand / Kilo = 10^3
+  324. [th]                <Unit>                  (4.0) <Metric prefix> Thousand / Kilo = 10^3
+  325. [hecto]             <Unit>                  (4.0) <Metric prefix> Hundred / Hecto = 10^2
+  326. [hund]              <Unit>                  (4.0) <Metric prefix> Hundred / Hecto = 10^2
+  327. [deca]              <Unit>                  (4.0) <Metric prefix> Ten / Deca = 10
+  328. [ten]               <Unit>                  (4.0) <Metric prefix> Ten / Deca = 10
+  329. [deci]              <Unit>                  (4.0) <Metric prefix> Tenth / Deci = 0.1
+  330. [centi]             <Unit>                  (4.0) <Metric prefix> Hundredth / Centi = 0.01
+  331. [milli]             <Unit>                  (4.0) <Metric prefix> Thousandth / Milli = 0.001
+  332. [mic]               <Unit>                  (4.0) <Metric prefix> Millionth / Micro = 10^-6
+  333. [n]                 <Unit>                  (4.0) <Metric prefix> Billionth / Nano = 10^-9
+  334. [p]                 <Unit>                  (4.0) <Metric prefix> Trillionth / Pico = 10^-12
+  335. [f]                 <Unit>                  (4.0) <Metric prefix> Quadrillionth / Femto = 10^-15
+  336. [a]                 <Unit>                  (4.0) <Metric prefix> Quintillionth / Atoo = 10^-18
+  337. [z]                 <Unit>                  (4.0) <Metric prefix> Sextillionth / Zepto = 10^-21
+  338. [y]                 <Unit>                  (4.0) <Metric prefix> Septillionth / Yocto = 10^-24
+  339. [m]                 <Unit>                  (4.0) <Unit of length> Metre / Meter (m=1)
+  340. [km]                <Unit>                  (4.0) <Unit of length> Kilometre / Kilometer (m=1)
+  341. [cm]                <Unit>                  (4.0) <Unit of length> Centimetre / Centimeter (m=1)
+  342. [mm]                <Unit>                  (4.0) <Unit of length> Millimetre / Millimeter (m=1)
+  343. [inch]              <Unit>                  (4.0) <Unit of length> Inch (m=1)
+  344. [yd]                <Unit>                  (4.0) <Unit of length> Yard (m=1)
+  345. [ft]                <Unit>                  (4.0) <Unit of length> Feet (m=1)
+  346. [mile]              <Unit>                  (4.0) <Unit of length> Mile (m=1)
+  347. [nmi]               <Unit>                  (4.0) <Unit of length> Nautical mile (m=1)
+  348. [m2]                <Unit>                  (4.0) <Unit of area> Square metre / Square meter (m=1)
+  349. [cm2]               <Unit>                  (4.0) <Unit of area> Square centimetre / Square centimeter (m=1)
+  350. [mm2]               <Unit>                  (4.0) <Unit of area> Square millimetre / Square millimeter (m=1)
+  351. [are]               <Unit>                  (4.0) <Unit of area> Are (m=1)
+  352. [ha]                <Unit>                  (4.0) <Unit of area> Hectare (m=1)
+  353. [acre]              <Unit>                  (4.0) <Unit of area> Acre (m=1)
+  354. [km2]               <Unit>                  (4.0) <Unit of area> Square kilometre / Square kilometer (m=1)
+  355. [mm3]               <Unit>                  (4.0) <Unit of volume> Cubic millimetre / Cubic millimeter (m=1)
+  356. [cm3]               <Unit>                  (4.0) <Unit of volume> Cubic centimetre / Cubic centimeter (m=1)
+  357. [m3]                <Unit>                  (4.0) <Unit of volume> Cubic metre / Cubic meter (m=1)
+  358. [km3]               <Unit>                  (4.0) <Unit of volume> Cubic kilometre / Cubic kilometer (m=1)
+  359. [ml]                <Unit>                  (4.0) <Unit of volume> Millilitre / Milliliter (m=1)
+  360. [l]                 <Unit>                  (4.0) <Unit of volume> Litre / Liter (m=1)
+  361. [gall]              <Unit>                  (4.0) <Unit of volume> Gallon (m=1)
+  362. [pint]              <Unit>                  (4.0) <Unit of volume> Pint (m=1)
+  363. [s]                 <Unit>                  (4.0) <Unit of time> Second (s=1)
+  364. [ms]                <Unit>                  (4.0) <Unit of time> Millisecond (s=1)
+  365. [min]               <Unit>                  (4.0) <Unit of time> Minute (s=1)
+  366. [h]                 <Unit>                  (4.0) <Unit of time> Hour (s=1)
+  367. [day]               <Unit>                  (4.0) <Unit of time> Day (s=1)
+  368. [week]              <Unit>                  (4.0) <Unit of time> Week (s=1)
+  369. [yearj]             <Unit>                  (4.0) <Unit of time> Julian year = 365.25 days (s=1)
+  370. [kg]                <Unit>                  (4.0) <Unit of mass> Kilogram (kg=1)
+  371. [gr]                <Unit>                  (4.0) <Unit of mass> Gram (kg=1)
+  372. [mg]                <Unit>                  (4.0) <Unit of mass> Milligram (kg=1)
+  373. [dag]               <Unit>                  (4.0) <Unit of mass> Decagram (kg=1)
+  374. [t]                 <Unit>                  (4.0) <Unit of mass> Tonne (kg=1)
+  375. [oz]                <Unit>                  (4.0) <Unit of mass> Ounce (kg=1)
+  376. [lb]                <Unit>                  (4.0) <Unit of mass> Pound (kg=1)
+  377. [b]                 <Unit>                  (4.0) <Unit of information> Bit (bit=1)
+  378. [kb]                <Unit>                  (4.0) <Unit of information> Kilobit (bit=1)
+  379. [Mb]                <Unit>                  (4.0) <Unit of information> Megabit (bit=1)
+  380. [Gb]                <Unit>                  (4.0) <Unit of information> Gigabit (bit=1)
+  381. [Tb]                <Unit>                  (4.0) <Unit of information> Terabit (bit=1)
+  382. [Pb]                <Unit>                  (4.0) <Unit of information> Petabit (bit=1)
+  383. [Eb]                <Unit>                  (4.0) <Unit of information> Exabit (bit=1)
+  384. [Zb]                <Unit>                  (4.0) <Unit of information> Zettabit (bit=1)
+  385. [Yb]                <Unit>                  (4.0) <Unit of information> Yottabit (bit=1)
+  386. [B]                 <Unit>                  (4.0) <Unit of information> Byte (bit=1)
+  387. [kB]                <Unit>                  (4.0) <Unit of information> Kilobyte (bit=1)
+  388. [MB]                <Unit>                  (4.0) <Unit of information> Megabyte (bit=1)
+  389. [GB]                <Unit>                  (4.0) <Unit of information> Gigabyte (bit=1)
+  390. [TB]                <Unit>                  (4.0) <Unit of information> Terabyte (bit=1)
+  391. [PB]                <Unit>                  (4.0) <Unit of information> Petabyte (bit=1)
+  392. [EB]                <Unit>                  (4.0) <Unit of information> Exabyte (bit=1)
+  393. [ZB]                <Unit>                  (4.0) <Unit of information> Zettabyte (bit=1)
+  394. [YB]                <Unit>                  (4.0) <Unit of information> Yottabyte (bit=1)
+  395. [J]                 <Unit>                  (4.0) <Unit of energy> Joule (m=1, kg=1, s=1)
+  396. [eV]                <Unit>                  (4.0) <Unit of energy> Electronovolt (m=1, kg=1, s=1)
+  397. [keV]               <Unit>                  (4.0) <Unit of energy> Kiloelectronovolt (m=1, kg=1, s=1)
+  398. [MeV]               <Unit>                  (4.0) <Unit of energy> Megaelectronovolt (m=1, kg=1, s=1)
+  399. [GeV]               <Unit>                  (4.0) <Unit of energy> Gigaelectronovolt (m=1, kg=1, s=1)
+  400. [TeV]               <Unit>                  (4.0) <Unit of energy> Teraelectronovolt (m=1, kg=1, s=1)
+  401. [m/s]               <Unit>                  (4.0) <Unit of speed> Metre / Meter per second (m=1, s=1)
+  402. [km/h]              <Unit>                  (4.0) <Unit of speed> Kilometre / Kilometer per hour (m=1, s=1)
+  403. [mi/h]              <Unit>                  (4.0) <Unit of speed> Mile per hour (m=1, s=1)
+  404. [knot]              <Unit>                  (4.0) <Unit of speed> Knot (m=1, s=1)
+  405. [m/s2]              <Unit>                  (4.0) <Unit of acceleration> Metre / Meter per square second (m=1, s=1)
+  406. [km/h2]             <Unit>                  (4.0) <Unit of acceleration> Kilometre / Kilometer per square hour (m=1, s=1)
+  407. [mi/h2]             <Unit>                  (4.0) <Unit of acceleration> Mile per square hour (m=1, s=1)
+  408. [rad]               <Unit>                  (4.0) <Unit of angle> Radian (rad=1)
+  409. [deg]               <Unit>                  (4.0) <Unit of angle> Degree of arc (rad=1)
+  410. [']                 <Unit>                  (4.0) <Unit of angle> Minute of arc (rad=1)
+  411. ['']                <Unit>                  (4.0) <Unit of angle> Second of arc (rad=1)
+  412. (                   <Parser Symbol>         left parentheses
+  413. )                   <Parser Symbol>         right parentheses
+  414. ,                   <Parser Symbol>         comma (function parameters)
