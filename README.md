@@ -6,4 +6,4 @@ This WPF app allows to find approximate roots values of given non-linear math fu
 * Secant methiod
 * Iterations (fixed-point iteration) method
 Screenshot:\
-![screenshot](screenshot.png)
+![screenshot](RootsFinder/screenshot.png)
