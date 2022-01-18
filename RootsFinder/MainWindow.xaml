@@ -111,6 +111,7 @@
                             </TabItem.Header>
                             <TabItem.Content>
                                 <oxy:PlotView
+                                    IsEnabled="{Binding CanCalculate}"
                                     Model="{Binding DichotomyMethodPlotModel}"/>
                             </TabItem.Content>
                         </TabItem>
@@ -156,6 +157,7 @@
                             </TabItem.Header>
                             <TabItem.Content>
                                 <oxy:PlotView
+                                    IsEnabled="{Binding CanCalculate}"
                                     Model="{Binding NewtonsMethodPlotModel}"/>
                             </TabItem.Content>
                         </TabItem>
@@ -201,6 +203,7 @@
                             </TabItem.Header>
                             <TabItem.Content>
                                 <oxy:PlotView
+                                    IsEnabled="{Binding CanCalculate}"
                                     Model="{Binding SecantMethodPlotModel}"/>
                             </TabItem.Content>
                         </TabItem>
@@ -246,6 +249,7 @@
                             </TabItem.Header>
                             <TabItem.Content>
                                 <oxy:PlotView
+                                    IsEnabled="{Binding CanCalculate}"
                                     Model="{Binding IterationsMethodPlotModel}"/>
                             </TabItem.Content>
                         </TabItem>

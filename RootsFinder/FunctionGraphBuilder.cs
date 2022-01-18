@@ -75,12 +75,12 @@ namespace RootsFinder
             return output;
         }
 
-        private List<LineSeries> CreateFunctionGraph(double start, double end, OxyColor color)
+        private List<LineSeries> CreateFunctionGraph(double start, double end, double precision, OxyColor color)
         {
             var result = new List<LineSeries>();
             var points = new List<DataPoint>();
 
-            for (var x = start; x <= end; x += _dx)
+            for (var x = start; x <= end; x += precision)
             {
                 var validPoint = false;
                 var y = _f.FunctionValue(x);
@@ -93,7 +93,7 @@ namespace RootsFinder
                 {
                     var dy = y - points[^1].Y;
 
-                    if (Math.Abs(dy / _dx) < 1000)
+                    if (Math.Abs(dy / precision) < 1000)
                     {
                         validPoint = true;
                     }
@@ -126,7 +126,7 @@ namespace RootsFinder
         {
             var result = new List<LineSeries>();
 
-            if (!(config.CanBeDrawn && _f.IsSyntaxCorrect))
+            if (!(config.CanBeDrawn && _f.IsSyntaxCorrect && _f.CanCalculate))
             {
                 return result;
             }
@@ -141,7 +141,8 @@ namespace RootsFinder
             yAxis.Points.Add(new DataPoint(0, config.Top * 1.5));
             yAxis.Points.Add(new DataPoint(0, config.Bottom * 1.5));
 
-            var functionGraph = CreateFunctionGraph(config.Start, config.End, config.GraphColor);
+            var precision = Math.Abs(config.Start - config.End) > 1000 ? _dx * 10.0 : _dx;
+            var functionGraph = CreateFunctionGraph(config.Start, config.End, precision, config.GraphColor);
 
             var rootsPoints = GetRootsPoints(config.Roots, config.RootsColor, config.RootsMarkerType, config.RootsMarkerHeight);
             var restrictionPoints = GetRestrictionPoints(config.RootsStart, config.RootsEnd, config.RestrictionPointsColor, config.RestrictionPointsMarkerType, config.RestrictionPointsMarkerHeight);
