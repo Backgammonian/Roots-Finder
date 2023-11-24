@@ -7,7 +7,7 @@ This app is the result of course work on the subject of computational mathematic
 * Newton's method
 * Secant methiod
 * Iterations (fixed-point iteration) method
-## Screenshot:
+## Demonstration:
 ![screenshot](RootsFinder/screenshot.png)
 ## Dependencies:
 * [OxyPlot](https://github.com/oxyplot/oxyplot)
