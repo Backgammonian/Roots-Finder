@@ -1,5 +1,7 @@
 # Roots-Finder
-This WPF app allows to find approximate roots values of given non-linear math function and to visualize them along with the graph of function itself.
+This WPF app allows to find and approximate the root values of non-linear math function and to visualize them along with the graph of the function itself.
+
+This app is the result of course work on the subject of computational mathematics.
 ## Available methods:
 * Dichotomy (bisection, interval halving) method
 * Newton's method
